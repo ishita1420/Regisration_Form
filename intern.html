@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="intern.css">
+    <script src="intern1.js"></script>
+    <title>Form</title>
+</head>
+<body>
+    <div class="container">
+    <form name="myform" onsubmit="return myfun()">
+    <fieldset>
+    <legend><h1>Registration Form</h1></legend>
+        <label ><b>User ID :</b></label>
+        <input type="text" class="user" id="use" placeholder="Enter User ID" required>
+        <span id="user_message"></span><br><br>
+        <label><b>password :</b></label>
+        <input type="password" class="pass" id="word" value="" placeholder="Enter Password" required>
+        <span id="password_message"></span><br><br>
+        <label><b>Name :</b></label>
+        <input type="text" class="na" id="me" value="" placeholder="Enter name" required>
+        <span id="name_message"></span><br><br>
+        <label><b>Address :</b></label>
+        <input tye="text" class="add" id="ress" placeholder="Enter Address"><br><br>
+        <label><b>Country :</b></label>
+        <select class="coun" id="try" required>
+            <option>Please Select Country Only</option>
+            <option>Australia</option>
+            <option>Brazil</option>
+            <option>China</option>
+            <option>Canada</option>
+            <option>Germany</option>
+            <option>India</option>
+            <option>Japan</option>
+            <option>Mexico</option>
+            <option>New Zealand</option>
+            <option>South Africa</option>
+            <option>Switzerland</option>
+            <option>Others</option>
+        </select><br><br>
+        <label><b>ZIP Code :</b></label>
+        <input type="text" class="zip" id="code" value="" placeholder="Enter Zip Code" required>
+        <span id="zip_message"></span><br><br>
+        <label><b>Email :</b></label>
+        <input type="email" class="E" id="mail" name="emailname" placeholder="Enter Email"required>
+        <span id="Email_message"></span><br><br>
+        <label><b>Gender :</b></label>
+        <input type="radio" class="Gen" id="der" name="gen_der">Male
+        <input type="radio" class="Gen" id="der" name="gen_der">Female
+        <span id="message"></span><br><br>
+        <label><b>About :</b></label><br>
+        <textarea  rows="4" cols="50"></textarea><br><br>
+        <input type="submit" id="submit"  value="submit">
+    </fieldset>
+    </form>
+    </div>
+</body>
+</html>
